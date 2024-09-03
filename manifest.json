@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Demo",
+    "version": "1.0",
+    "description": "Adds a 'demo' button to the context menu when hovering over text, opens a new tab on click.",
+    "permissions": ["contextMenus", "tabs", "activeTab"],
+    "background": {
+        "service_worker": "background.js",
+        "persistent": true
+    },
+    "icons": {
+        "128": "public/images/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["content_script.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "action": {}
+}
