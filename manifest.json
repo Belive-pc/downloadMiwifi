@@ -1,8 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Demo",
+    "name": "下载至小米路由器",
     "version": "1.0",
-    "description": "Adds a 'demo' button to the context menu when hovering over text, opens a new tab on click.",
     "permissions": ["contextMenus", "tabs", "activeTab"],
     "background": {
         "service_worker": "background.js",

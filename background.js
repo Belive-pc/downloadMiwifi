@@ -1,7 +1,7 @@
 let downloadHref;
 let isMenuExists = false;
 
-chrome.browserAction.onClicked.addListener(function (tab) {
+chrome.action.onClicked.addListener(function (tab) {
     chrome.tabs.create({ url: "https://d.miwifi.com/d2r/" });
 });
 
